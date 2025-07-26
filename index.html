@@ -138,10 +138,39 @@
   justify-content: center;
   z-index: 999;
   transition: background-color 0.3s ease;
+  overflow: hidden;
 }
 
 .telegram-float:hover {
   background-color: #2e7d32;
+}
+
+/* تأثير الوميض */
+.telegram-float::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
 }
 
     .subheadline {
