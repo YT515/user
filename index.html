@@ -38,7 +38,7 @@
     }
     h2 {
       text-align: center;
-      margin-top: 40px;
+      margin-top: 20px;
       color: #f0f0f0;
       border-bottom: 2px solid #4CAF50;
       display: inline-block;
@@ -122,6 +122,39 @@
       margin-right: auto;
     }
 
+    .subheadline {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 20px; /* تقليل المسافة بين السطر والعنوان التالي */
+  padding: 10px 20px;
+  display: inline-block;
+  color: #ffffff;
+  background: #1e1e1e;
+  border: 1px solid #4CAF50;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(76, 175, 80, 0.4);
+  transition: all 0.3s ease;
+}
+
+.subheadline:hover {
+  background: #2e2e2e;
+  box-shadow: 0 0 18px rgba(76, 175, 80, 0.8);
+  transform: scale(1.03);
+}
+
+.highlight-word {
+  color: #4CAF50;
+  font-weight: bold;
+  text-shadow: 0 0 6px rgba(76, 175, 80, 0.7);
+  transition: text-shadow 0.3s ease;
+}
+
+.highlight-word:hover {
+  text-shadow: 0 0 10px rgba(76, 175, 80, 1);
+}
+
     .meaning-link {
       display: inline-block;
       margin-top: 8px;
@@ -169,6 +202,9 @@
 <body>
 
   <h1>يوزرات الأكبر</h1>
+  <div class="subheadline">
+  أكبر تشكيلة يوزرات <span class="highlight-word">إنستقرام</span> بالوطن العربي
+</div>
   <h2>يوزرات مميزة مكّس</h2>
   <div class="card available">
     <div class="username">2.i_</div>
